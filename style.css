@@ -1,0 +1,27 @@
+body {
+  background: #d4fddf;
+  font-family: Arial;
+  margin: 30px;
+}
+
+#debug-container {
+  max-width: 400px;
+  border: 3px solid orange;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.debug-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  font-size: 20px;
+}
+
+.refresh-button {
+  padding: 10px;
+  background: orange;
+  border: 1px solid black;
+  font-family: inherit;
+  font-size: 18px;
+}
