@@ -5,15 +5,64 @@
             <style>
                 .pointer {cursor: pointer;}
             </style>
+            <style>
+                .HideMobile{display:inline;}
+                @media screen and (max-width: 767px) {
+                      .HideMobile{
+                            display:none !important;
+                   }
+                 }
+                
+            </style>
+            <style>
+                * {
+                    margin: 0px;
+                    padding: 0px;
+                }
+
+
+                .Main-Text:hover + .Extra-Text {
+                    display: block;
+                }
+
+                .Extra-Text {
+                    background-color: #FFFFFF;
+                    margin-top: 10px;
+                    width: 200px;
+                    border: 2px solid #000000;
+                    padding: 10px;
+                    font-size: 16px;
+                    display: none;
+                    
+                }
+
+                .Main-Text{display:inline;}
+                @media screen and (min-width: 767px) {
+                      .Main-Text{
+                            display:none !important;
+                      }
+                    }
+            </style>
             <link rel="stylesheet" href="./style.css">
             <title>Alex's Toolbox</title>
-            <img src="toolbox.png" alt="rappresentation of a virtual toolbox" style="float: right; margin-right: 15px;">
+            <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="./style.css">
+            <img src="toolbox.png" alt="rappresentation of a virtual toolbox" style="float: right; margin-right: 15px" class="HideMobile">
             <h1>Alex's personal toolbox</h1>
             <p><i>This is a collection of various utilities found on the internet useful to tech entusiasts. (and maybe apple fans....)</i></p>
             <button class="refresh-button pointer" onclick="location.href = './UA-Parser'">UA-Parser</button>
             <button class="refresh-button pointer" onclick="location.href = './All-cursor'">Every Cursor</button>
             <button class="refresh-button pointer" onclick="location.href = './ios-img'">Apple Wallpapers</button>
             <button class="refresh-button pointer" onclick="location.href = './ar'">Apple AR Easter Eggs</button>
+            <br>
+            <br>
+            <br>
+                <a class="Main-Text">Mobile Viewport problems? "Touch" here!</a>
+            <div class="Extra-Text">
+                <p>
+                it's hard to port an entire site to a mobile viewport state correctly, and as a beginner i am not an expert at HTML.
+                i tested multiple devices trough digital elmulation and i corrected every problem, but in case there is a problem, you can create an issue on GitHub!
+                </p>
+            </div>
         </head>
     </body>
 </html>
