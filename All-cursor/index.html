@@ -41,6 +41,15 @@
 .zoom-in {cursor: zoom-in;}
 .zoom-out {cursor: zoom-out;}
   </style>
+  <style>
+    .HideMobile{display:inline;}
+    @media screen and (max-width: 767px) {
+          .HideMobile{
+                display:none !important;
+       }
+     }
+    
+</style>
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -48,7 +57,7 @@
 <h1>Every Cursor</h1>
 <p>Hover with the mouse on any button to visualize the cursor.</p>
 
-<img src="./cursor.png" alt="Cursor" style="float: right; margin-right: 15px;">
+<img class="HideMobile" src="./cursor.png" alt="Cursor" style="float: right; margin-right: 15px;">
 <button class="alias cursor">alias</button>
 <button class="all-scroll cursor">all-scroll</button>
 <button class="auto cursor">auto</button>
